@@ -16,8 +16,8 @@ app.get('/produtos', (req, res, next) => {
 });
 
 app.get('/produtos/:id',(req,res,next)=>{
-    res.send(bancoDeDados.getProduto(req.params.id));
-})
+    res.send(bancoDeDados.getProduto(req.params.id)) ;
+});
 
 app.post('/produtos', (req, res, next) => {
     const produto = bancoDeDados.salvarProduto({
